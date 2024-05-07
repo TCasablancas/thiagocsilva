@@ -1,0 +1,115 @@
+@media screen and (max-width: 1150px) {
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(0, 0%, 6%, 0.2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right 0.4s;
+    }
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--z-fixed);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: var(--header-height);
+    margin: 1rem;
+}
+
+.nav_logo {
+    color: var(--first-color);
+    transition: color 0.4s;
+    font-size: var(--h2-font-size);
+    font-family: var(--body-font);
+
+}
+
+.nav_logo dl {
+    color: #202022;
+}
+
+.nav_logo dl dt {
+    font-size: 28px;
+}
+
+.nav_logo dl dt p {
+    float: right;
+    font-size: 28px;
+    font-weight: var(--font-semi-bold);
+}
+
+.nav_logo dl dd {
+    font-size: 12px;
+    color: white;
+    font-kerning: 12rem;
+    font-weight: var(--font-extra-light);
+    font-kerning: none;
+}
+
+.nav_menu {
+    /* width: 300px;
+    height: 100ch;
+    border-radius: 5px;
+    background-color: red; */
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    background-color: #202022;;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+}
+
+.nav_item {
+    margin-top: 15px;
+}
+
+.nav_link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+    margin: 30px;
+}
+
+.nav_link:hover, 
+.nav_icon_link:hover{
+    color: #00747C;
+}
+
+.nav_media {
+    display: inline-block;
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: center;*/
+    position: relative;
+}
+
+.nav_icon {
+    font-size: 24px;
+    float: left;
+}
+
+.nav_icon_link {
+    color: #202022;
+    display: block;
+    margin-left: 20px;
+    transition: color 0.4s;
+}

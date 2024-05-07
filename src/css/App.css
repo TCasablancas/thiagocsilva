@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+.App dl dd {
+  margin: 0;
+}
+
+.device_container {
+  width: 220px;
+  height: 380px;
+}
+
+.box_container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  border-radius: 12px;
+  background-color: #00BBC9;
+}
