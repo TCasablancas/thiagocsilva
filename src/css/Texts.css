@@ -1,0 +1,27 @@
+.text_emphasis {
+    font-size: 4.0rem;
+}
+
+.text_medium {
+    font-weight: var(--font-medium);
+}
+
+.text_light {
+    font-weight: var(--font-light);
+}
+
+.p_subtitle p {
+    
+}
+
+.text_cutted {
+    text-decoration: line-through;
+}
+
+.text_teal_color {
+    color: var(--teal-main);
+}
+
+.text_centered {
+    text-align: center;
+}

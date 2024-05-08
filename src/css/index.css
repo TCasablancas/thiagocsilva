@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 * {
@@ -9,24 +9,34 @@
 
 :root {
   --header-height: 3.5rem;
-  --first-color: hsl(28, 88%, 62%);
+  --gray-light: #878787;
+  --gray-lighter: #CACACA;
+  --gray-dark: #202022;
+  --teal-main: #00BBC9;
+  --teal-dark: #00747C;
+  --shadow-color: rgba(235, 241, 237, 1);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 75%);
-  --body-color: #878787;
   --body-font: "Lexend", sans-serif;
-  /* --secondary-font: ; */
+  --secondary-font: "DM Mono", monospace;
   --font-optical-sizing: auto;
   --font-style: normal;
   --h2-font-size: 1.25rem;
   --small-font-size: 0.813rem;
+  --font-thin: 100;
   --font-extra-light: 200;
+  --font-light: 300;
+  --font-medium: 500;
   --font-semi-bold: 600;
+  --font-bol: 700;
+  --font-extra-bold: 800;
+  --font-black: 900;
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: white;
   color: var(--text-color);
   font-family: var(--body-font);
 }

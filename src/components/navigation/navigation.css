@@ -40,11 +40,12 @@ nav {
 }
 
 .nav_logo dl {
-    color: #202022;
+    color: var(--gray-dark);
 }
 
 .nav_logo dl dt {
     font-size: 28px;
+    margin-right: 8px;
 }
 
 .nav_logo dl dt p {
@@ -54,11 +55,12 @@ nav {
 }
 
 .nav_logo dl dd {
+    display: block;
+    float: left;
     font-size: 12px;
-    color: white;
-    font-kerning: 12rem;
+    color: var(--gray-lighter);
+    letter-spacing: 5px;
     font-weight: var(--font-extra-light);
-    font-kerning: none;
 }
 
 .nav_menu {
@@ -72,9 +74,9 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 20px 20px;
-    background-color: #202022;;
+    /* background-color: var(--gray-lighter); */
     height: 50px;
-    border-radius: 25px;
+    border-radius: 4px;
     padding: 0 30px;
 }
 
@@ -83,22 +85,41 @@ nav {
 }
 
 .nav_link {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+    color: var(--gray-light);
+    font-family: var(--secondary-font);
+    font-weight: var(--font-medium);
     transition: color 0.4s;
     margin: 30px;
+    position: relative;
+    outline: none !important;
+    transition: 0.4s;
+}
+
+.nav_link:after {
+    background-color: var(--teal-main);
+    content: "";
+    width: 0;
+    transition: 0.4s;
+    position: absolute;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    color: var(--teal-main);
 }
 
 .nav_link:hover, 
 .nav_icon_link:hover{
-    color: #00747C;
+    color: var(--teal-main);
+}
+
+.nav_link:hover::after,
+.nav_link:focus::after {
+    width: 100%;
 }
 
 .nav_media {
     display: inline-block;
-    /* flex-direction: column;
-    justify-content: space-between;
-    align-items: center;*/
     position: relative;
 }
 
@@ -112,4 +133,21 @@ nav {
     display: block;
     margin-left: 20px;
     transition: color 0.4s;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    border-top: solid 1px var(--shadow-color);
+    padding: 0.8rem;
+}
+
+footer span {
+    text-align: center;
+    font-size: 11px;
+    font-weight: var(--font-extra-light);
+    text-align: center;
+    width: 100vw;
 }
