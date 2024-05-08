@@ -1,25 +1,26 @@
-import React from 'react';
+import * as React from 'react';
+import * as ReactDOM from "react-dom/client";
 import './css/App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/navigation/top_navigation_bar';
-import Home from './views/home/Home';
-import Projects from './views/projects/Projects';
+import Home from './views/Home';
+import Projects from './views/Projects';
+import About from './views/About';
+import Contact from './views/Contact';
 import Footer from './components/navigation/Footer';
 
 function App() {
   return (
     <Router>
-      <NavBar>
+      <NavBar />
         <main className='main-content'>
-          <Routes>
-            <Route path='/home' element={ <Home /> } />
-            <Route path='/projects' element={ <Projects /> } />
+          <Routes path="/" element={ <Home />}>
+            <Route index element={ <Home /> } />
+            <Route path='projects' element={ <Projects /> } />
+            <Route path='about' element={ <About /> } />
+            <Route path='contact' element={ <Contact /> } />
           </Routes>
         </main>
-      </NavBar>
-
-      <Home />
-
       <Footer />
     </Router>
   );

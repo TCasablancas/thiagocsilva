@@ -25,3 +25,16 @@
 .text_centered {
     text-align: center;
 }
+
+.description_small {
+    font-size: 11px;
+    font-weight: var(--font-light);
+}
+
+.h2_title {
+
+}
+
+.h3_subtitle {
+    font-weight: 200;
+}

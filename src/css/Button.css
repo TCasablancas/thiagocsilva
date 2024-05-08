@@ -1,0 +1,35 @@
+.main_button {
+    border-radius: 6px;
+    padding: 15px;
+    border: none;
+}
+
+.main_button::selection {
+    background-color: black;
+}
+
+.main_button p {
+    color: white;
+    font-weight: var(--font-bold);
+}
+
+.right_button {
+    display: block;
+    float: right;
+}
+
+.teal_button {
+    background-color: var(--teal-main);
+}
+
+.teal_dark_button {
+    background-color: var(--teal-dark);
+}
+
+.green_button {
+    background-color: var(--olive-green);
+}
+
+.red_button {
+    background-color: var(--sunny-red);
+}
