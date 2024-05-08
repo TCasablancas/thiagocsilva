@@ -3,8 +3,8 @@ import React, { Component } from "react";
 class Projects extends Component {
     render() {
         return(
-            <div className="box_container">
-                
+            <div className="device_container">
+                <p>Lorem ipsum</p>
             </div>
         );
     };
