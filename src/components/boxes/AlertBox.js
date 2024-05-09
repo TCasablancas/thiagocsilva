@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import { GrDocumentPdf } from "react-icons/gr";
 import MainButton from "../buttons/MainButton";
 import '../../css/Button.css';
+import './Boxes.css';
 
 class AlertBox extends Component {
     constructor(props) {
         super(props);
-        this.title;
-        this.description;
-        this.color;
-        this.buttonColor;
+        this.title = "";
+        this.description = "";
+        this.color = "";
+        this.buttonColor = "";
         this.state = { hasButton: false };
     }
 
@@ -22,7 +23,7 @@ class AlertBox extends Component {
         }
 
         return(
-            <div className={ `main_alert_box box_shadow ${ this.props.color }` }>
+            <div className={ `main_alert_box ${ this.props.color }` }>
                 <div className="alert_data_container">
                     <div className="left_icon"><GrDocumentPdf /></div>
                     <dl>

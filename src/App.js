@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from "react-dom/client";
 import './css/App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from './components/navigation/top_navigation_bar';
@@ -13,7 +12,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-        <main className='main-content'>
+        <main className='main_content'>
           <Routes path="/" element={ <Home />}>
             <Route index element={ <Home /> } />
             <Route path='projects' element={ <Projects /> } />

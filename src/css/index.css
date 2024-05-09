@@ -40,12 +40,20 @@
   --font-black: 900;
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  --small-radius: 4px;
+  --medium-radius: 8px;
+  --big-radius: 12px;
+  --huge-radius: 16px;
 }
 
 body {
   background-color: white;
   color: var(--text-color);
   font-family: var(--body-font);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
  
 ul {

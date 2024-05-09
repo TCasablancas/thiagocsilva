@@ -18,8 +18,8 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
     z-index: var(--z-fixed);
+    backdrop-filter: blur(6px);
 }
 
 nav {
@@ -61,13 +61,6 @@ nav {
     color: var(--gray-lighter);
     letter-spacing: 5px;
     font-weight: var(--font-extra-light);
-}
-
-.nav_menu {
-    /* width: 300px;
-    height: 100ch;
-    border-radius: 5px;
-    background-color: red; */
 }
 
 .nav_list {
@@ -136,8 +129,7 @@ nav {
 }
 
 footer {
-    display: flex;
-    position: absolute;
+    /* display: inline-block; */
     bottom: 0;
     width: 100vw;
     border-top: solid 1px var(--shadow-color);
@@ -145,9 +137,11 @@ footer {
 }
 
 footer span {
+    position: relative;
+    display: flex;
     text-align: center;
     font-size: 11px;
     font-weight: var(--font-extra-light);
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }

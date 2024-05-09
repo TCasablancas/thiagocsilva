@@ -10,6 +10,10 @@
   height: 380px;
 }
 
+.main_content {
+  flex: 1;
+}
+
 .box_container {
   display: block;
   width: 90vw;
@@ -20,7 +24,7 @@
   justify-content: space-between;
   position: relative;
   padding: 20px;
-  margin: 100px auto 0;
+  margin: 100px auto 20px auto;
 }
 
 .box_shadow {
@@ -51,58 +55,6 @@
   max-width: 120%;
   margin: -15px 0 0 -30px;
   display: block;
-}
-
-.main_alert_box {
-  width: 60%;
-  border-radius: 6px;
-  text-align: left;
-  padding: 1.6rem;
-  color: white;
-  display: inline-block;
-  position: relative;
-  margin: auto;
-}
-
-.alert_box_message {
-  background-color: var(--teal-main);
-}
-
-.alert_box_warning {
-  background-color: var(--sunny-red);
-}
-
-.main_alert_box span {
-  font-size: 1em;
-  font-weight: var(--font-bold);
-  position: relative;
-  display: inline-block;
-}
-
-.main_alert_box p {
-  font-size: 0.8em;
-  position: relative;
-  display: inline-block;
-}
-
-.alert_data_container {
-  position: relative;
-  display: inline-block;
-}
-
-.alert_data_container dl {
-  position: relative;
-  display: inline-block;
-}
-
-.alert_data_container dt {
-  font-size: 1.3em;
-  font-weight: 800;
-}
-
-.alert_data_container dd {
-  font-size: 0.8em;
-  font-weight: 300;
 }
 
 .left_icon {
@@ -149,4 +101,9 @@
 
 .li_icon:hover {
   color: var(--swift-orange);
+}
+
+.scroll_container {
+  width: 900px;
+  margin: 90px auto 150px auto;
 }

@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import emoji from '../images/thiago_emoji.JPG';
 import '../css/App.css';
